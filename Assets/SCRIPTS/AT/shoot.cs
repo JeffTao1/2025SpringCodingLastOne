@@ -10,7 +10,7 @@ namespace NodeCanvas.Tasks.Actions {
         public BBParameter<GameObject> bullet;
         public Transform whereStartShoot;
         public Renderer Renderer;
-        private float Speed;
+        
         //Use for initialization. This is called only once in the lifetime of the task.
         //Return null if init was successfull. Return an error string otherwise
      
@@ -35,8 +35,8 @@ namespace NodeCanvas.Tasks.Actions {
         }
         protected override void OnUpdate()
         {
-            GameObject shoot = GameObject.Instantiate(bullet.value, whereStartShoot.position, whereStartShoot.rotation);
-            Renderer.material.color = Color.blue;
+            GameObject shoot = GameObject.Instantiate(bullet.value, whereStartShoot.position, whereStartShoot.rotation);// the enemy shoot the bullet(spwon)
+            Renderer.material.color = Color.blue;// also the color will back to blue after it stop shoot
            
 
         }

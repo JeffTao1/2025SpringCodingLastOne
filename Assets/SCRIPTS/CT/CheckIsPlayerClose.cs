@@ -11,7 +11,7 @@ namespace NodeCanvas.Tasks.Conditions {
 		public Transform enemy;
 		
 		protected override bool OnCheck() {
-			float howfar = Vector3.Distance(enemy.transform.position,playerwhere.transform.position);
+			float howfar = Vector3.Distance(enemy.transform.position,playerwhere.transform.position);// if is close then enemy will attack to player
 			
 			if(howfar <= checkarea)
 			{

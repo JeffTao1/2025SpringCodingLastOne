@@ -26,12 +26,12 @@ namespace NodeCanvas.Tasks.Conditions {
 		//Return whether the condition is success or failure.
 		protected override bool OnCheck() {
 			GameObject[] food = GameObject.FindGameObjectsWithTag("Food");// Adam teach me how to do it using "https://docs.unity3d.com/6000.0/Documentation/ScriptReference/GameObject.FindGameObjectsWithTag.html"
-            if (food == null || food.Length == 0)
+            if (food == null || food.Length == 0)// if no food then not run the next one
 				return false;
 			else
 			{
-				return true;
-			}
+				return true;// if have food in the map (scence)run the next task
+ 			}
 		}
 	}
 }

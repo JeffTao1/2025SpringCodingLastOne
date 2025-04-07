@@ -7,7 +7,7 @@ namespace NodeCanvas.Tasks.Actions {
 
 	public class randommove : ActionTask {
 
-		public Transform[] pointtomove;//where the enemy gonna move to
+		public Transform[] pointtomove;//where the enemy gonna move to random point array
 		public NavMeshAgent thewalker;
 
 

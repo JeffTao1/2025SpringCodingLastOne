@@ -7,7 +7,7 @@ using UnityEngine;
 namespace NodeCanvas.Tasks.Actions {
 
 	public class backToD : ActionTask {
-        public bool TORF = true;
+        public bool TORF = true;// make the me can control on the task window
         public Transform Thediamond;//where the enemy gonna move to
         public NavMeshAgent thewalker;
 
@@ -25,7 +25,7 @@ namespace NodeCanvas.Tasks.Actions {
         protected override void OnExecute()
         {
 
-            thewalker.SetDestination(Thediamond.position);
+            thewalker.SetDestination(Thediamond.position);// back to the diamond
            
         }
         protected override void OnUpdate()

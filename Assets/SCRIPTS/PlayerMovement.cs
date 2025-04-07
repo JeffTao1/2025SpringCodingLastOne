@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))// use left mouse to move the player base on the physic.
         {
             Ray mouseRay = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(mouseRay, out RaycastHit hitInfo))
@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Vector3 spawnLocation = new Vector3(transform.position.x, 0.5f, transform.position.z);
             GameObject fooder = Instantiate(food, spawnLocation, gameObject.transform.rotation);
+            //right mouse will spown a food let the dog eat.
 
         }
     }
